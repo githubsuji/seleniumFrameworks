@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="development suite" 
+	preserve-order="true">
+	<parameter name="browser" value="CHROME"></parameter>
+	<test verbose="10" name="Test chrome">
+		<classes>
+		<class name="com.calibroz.page.landing.LoginTest"></class> 
+			
+		</classes>
+	</test>
+	<listeners> 
+	<listener class-name= "com.calibroz.testng.listener.CalibrozTestngListener"></listener>
+	
+	</listeners>
+</suite> <!-- Default suite -->

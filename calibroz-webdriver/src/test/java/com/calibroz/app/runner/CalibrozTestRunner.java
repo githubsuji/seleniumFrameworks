@@ -14,7 +14,7 @@ public class CalibrozTestRunner {
 
 	public static void main(String[] args) {
 		List<String> list = new ArrayList<String>();
-		list.add("F:\\Selenium\\eclipse-workspace\\calibroz-webdriver\\src\\test\\resources\\development-suite.xml");
+		list.add("D:\\Selenium\\seleniumFrameworks\\calibroz-webdriver\\src\\test\\resources\\development-suite.xml");
 		TestNG testRunner =  new TestNG();
 		testRunner.setTestSuites(list);
 		testRunner.run();

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="April Relese Suite" parallel="none" verbose="10">
+  <test name="Chrome Browser Test">
+  
+  <parameter name="browserType" value="CHROME"></parameter>
+  <classes>
+  <class name="com.logistics.qrpproject.page.landing.LandingPageTest"></class>
+  </classes>
+  </test> <!-- Chrome Browser Test -->
+</suite> <!-- April Relese Suite -->

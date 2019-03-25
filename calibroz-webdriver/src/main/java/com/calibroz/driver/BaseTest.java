@@ -38,7 +38,10 @@ public abstract class BaseTest {
 		switch (browser) {
 		case CHROME:
 			System.err.println("######################");
-			WebDriverManager.chromedriver().setup();
+			WebDriverManager.chromedriver().clearPreferences();
+			//WebDriverManager.chromedriver().setup();
+			//https://github.com/bonigarcia/webdrivermanager/issues/318
+			WebDriverManager.chromedriver().version("73").setup();
 			break;
 		case FIREFOX:
 			WebDriverManager.firefoxdriver().setup();
@@ -53,6 +56,7 @@ public abstract class BaseTest {
 			
 			break;
 		default:
+			WebDriverManager.chromedriver().clearPreferences();
 			WebDriverManager.chromedriver().setup();
 			break;
 		}

@@ -1,18 +1,17 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.calibroz</groupId>
-	<artifactId>calibroz-webdriver-app</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+  <groupId>com.logistics</groupId>
+  <artifactId>qrpproject</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
 
-	<name>calibroz-webdriver</name>
-	<url>http://maven.apache.org</url>
+  <name>qrpproject</name>
+  <url>http://maven.apache.org</url>
 
-	<properties>
-		<poi.version>3.17</poi.version>
+  <properties>
+   <poi.version>3.17</poi.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<jre.level>1.8</jre.level>
 		<jdk.level>1.8</jdk.level>
@@ -20,9 +19,8 @@
 		<testng.version>6.14.3</testng.version>
 		<webdriver.manager>3.3.0</webdriver.manager>
 		<mvnsurefire.version>2.22.0</mvnsurefire.version>
-		<log4j>1.2.17</log4j>
-	</properties>
-	<build>
+  </properties>
+<build>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -33,7 +31,7 @@
 					<target>${jre.level}</target>
 				</configuration>
 			</plugin>
-			<!--plugin>
+		<!-- 	<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>${mvnsurefire.version}</version>
@@ -42,12 +40,11 @@
 						<suiteXmlFile>src/test/resources/development-suite.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
-			</plugin-->
+			</plugin> -->
 		</plugins>
 	</build>
-	<dependencies>
-
-		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+  <dependencies>
+   <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
@@ -78,11 +75,7 @@
 			<artifactId>selenium-edge-driver</artifactId>
 			<version>${selenium.version}</version>
 		</dependency>
-		<dependency>
-			<groupId>org.seleniumhq.selenium</groupId>
-			<artifactId>selenium-edge-driver</artifactId>
-			<version>${selenium.version}</version>
-		</dependency>
+		
 		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-ie-driver -->
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
@@ -184,24 +177,19 @@
 		<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
-			<version>${log4j}</version>
+			<version>1.2.17</version>
 		</dependency>
-		<dependency>
-    <groupId>log4j</groupId>
-    <artifactId>apache-log4j-extras</artifactId>
-    <version>${log4j}</version>
-</dependency>
 		<!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
 		<dependency>
 			<groupId>com.google.guava</groupId>
 			<artifactId>guava</artifactId>
 			<version>26.0-jre</version>
 		</dependency>
-		 <dependency>
-	<groupId>com.sun.mail</groupId>
-	<artifactId>javax.mail</artifactId>
-	<version>1.5.5</version>
-</dependency>
-		
-	</dependencies>
+		<dependency>
+			<groupId>com.sun.mail</groupId>
+			<artifactId>javax.mail</artifactId>
+			<version>1.5.5</version>
+		</dependency>
+   
+  </dependencies>
 </project>
